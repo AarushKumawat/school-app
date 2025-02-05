@@ -48,8 +48,8 @@ Author URL: http://w3layouts.com
                     <form th:action="@{/saveMsg}" method="post" class="signin-form">
                         <div class="input-grids">
                             <div class="row">
-                                <div class="col-sm-6">
-                                    <input type="text" name="name" id="name" placeholder="Your Name"
+                                <div class="col-sm-6"> 
+                                    <input type="text" name="name" id="name" placeholder="Your Name" required = "true"
                                         class="contact-input" />
                                 </div>
                                 <div class="col-sm-6">
@@ -57,8 +57,8 @@ Author URL: http://w3layouts.com
                                         class="contact-input" />
                                 </div>
                             </div>
-                            <input type="text" name="email" id="email" placeholder="Your Email" class="contact-input" />
-                            <input type="text" name="subject" id="subject" placeholder="Subject"
+                            <input type="email" name="email" id="email" placeholder="Your Email" class="contact-input" />
+                            <input type="email" name="subject" id="subject" placeholder="Subject"
                                 class="contact-input" />
                         </div>
                         <div class="form-input">

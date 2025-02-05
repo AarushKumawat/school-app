@@ -20,7 +20,7 @@ import lombok.extern.slf4j.Slf4j;
 public class HolidaysController {
 
     @GetMapping("/holidays/{display}")
-    public String displayHolidays(@PathVariable String display,Model model) {
+    public String displayHolidays(@PathVariable String display, Model model) {
         if(null != display && display.equals("all")){
             model.addAttribute("festival",true);
             model.addAttribute("federal",true);
